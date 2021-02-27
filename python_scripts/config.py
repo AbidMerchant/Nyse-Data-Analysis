@@ -1,0 +1,6 @@
+source='/home/hduser/work/crio_project/'
+hdfs_source='hdfs://localhost:9000/mnt/data/source/'
+hdfs_output='hdfs://localhost:9000/mnt/data/output/'
+mysql_un='hduser'
+mysql_password='Password@1234'
+mysql_url='jdbc:mysql://localhost:3306'

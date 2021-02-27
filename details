@@ -1,0 +1,24 @@
+Dataset Used : NY Yellow Taxi Trip dataset (Year-2019)
+Dataset Url  : https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Mysql Jar download: http://www.java2s.com/Code/Jar/m/Downloadmysqlconnectorjava5123binjar.htm
+
+* Dataset is present in CSV format in local directory.
+* Load it to Hadoop file system in orc format. (We shouldn't keep csv files as bkp so we will keep orc files as bkp)
+* Load the data in Spark and perform the necessary analysis, store the data back to HDFS.
+* Load the aggregated data in mysql using Pyspark.
+* Automate the full flow using Shell commands (Give references for Oozie and Airflow).
+
+
+Dataset details:
+- Size    : ~8 GB
+- Count   : 84,399,019
+- Columns : 18
+
+Analysis to be done:
+- Week level aggregation of Sales of each vendor
+- Month level aggregation of Sales of each vendor
+- Average amount of congestion surcharge each vendor charged in each month 
+- Distribution of percentage of trips at each hour of day (Use `tpep_pickup_datetime` column)
+- Top 3 payment types users used in each month
+- Distribution of payment type in each month 
+- Total passengers each Vendor served in each month
